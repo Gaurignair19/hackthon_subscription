@@ -1,4 +1,4 @@
-def add_customer(customers,plan amount,start,end):
+def add_customer(customers,plan,amount,start,end):
     name=input("Enter customer name:")
     email = input("Enter email:")
     for c in customers:
@@ -31,7 +31,7 @@ def view_customers(customers):
         print("Plan:", c["plan"])
         print("Amount:", c["amount"])
         print("Status:", c["status"])
-def search_customer(customer):
+def search_customer(customers):
     email = input("Enter email to search:")
     for c in customers:
         if c["email"] == email:
