@@ -6,16 +6,16 @@ def update_payment(customers):
             print("2.Pending")
             choice=input("Enter payment status")
             if choice=="1":
-                c["payment"]="Paid"
+                c["payment"]="paid"
                 print("PAYMENT UPDATED SUCCESFULLY!!")
             elif choice=="2":
-                c["payment"]="Pending"
+                c["payment"]="pending"
                 print("PAYMENT MARKED AS PRNDING")
             else:
                 print("Invalid Choice!!")
             return
     print("Customer not found!!")
-def view_payment(customers):
+def view_payments(customers):
     if len(customers)==0:
         print("No customer record found.")
         return
