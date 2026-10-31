@@ -5,7 +5,7 @@ def display_plans():
     print("2.GOLD-$399")
     print("3.PLATINUM-$599")
 def choose_plan():
-    display_plans
+    display_plans()
     choice=input("choose tour plan:")
     if choice=="1":
         plan ="SILVER"
